@@ -76,7 +76,7 @@ def make_quiz_button_template(quiz):
             text = quiz["question"][:160],
             actions = [
                 PostbackAction(
-                    label = quiz["choice"][i][:re.search("\(|\（", quiz["choices"][i]).start()],
+                    label = quiz["choices"][i][:re.search("\(|\（", quiz["choices"][i]).start()],
                     data = str(i)
                 )
                 for i in range(4)
