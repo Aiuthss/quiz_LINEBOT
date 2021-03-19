@@ -1,5 +1,6 @@
 from flask import Flask, request, abort
 import os
+import re
 from bs4 import BeautifulSoup
 import requests
 import random
@@ -69,13 +70,14 @@ def createRichmenu():
     return result
     
 def make_quiz_button_template(quiz):
+    
     message_template = TemplateSendMessage(
         alt_text = "非対応",
         template = ButtonsTemplate(
             text = quiz["question"][:160],
             actions = [
                 PostbackAction(
-                    label = quiz["choices"][i],
+                    label = quiz["choice"][i][:re.search("\(|\（", quiz["choices"][i]).start()],
                     data = str(i)
                 )
                 for i in range(4)
