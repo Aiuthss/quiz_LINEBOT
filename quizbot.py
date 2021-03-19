@@ -178,21 +178,21 @@ def handle_message(event):
 @handler.add(PostbackEvent)
 def handle_postback(event):
     print(event.postback.data)
-#    if event.user_id not in flag.keys():
-#        flag[event.user_id] = 0
+#    if event.source.user_id not in flag.keys():
+#        flag[event.source.user_id] = 0
     if event.postback.data in categories:
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
-            quiz[event.user_id] = make_quiz(event.postback.data)
-            quiz_message = make_quiz_button_template(quiz[event.user_id])
+            quiz[event.source.user_id] = make_quiz(event.postback.data)
+            quiz_message = make_quiz_button_template(quiz[event.source.user_id])
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
         except LineBotApiError as e:
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="Error!"))
             print(str(e))
     elif event.postback.data in ["0","1","2","3"]:
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz[event.user_id]["response"][int(event.postback.data)]))
-        quiz[event.user_id] = None
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz[event.source.user_id]["response"][int(event.postback.data)]))
+        quiz[event.source.user_id] = None
 
 if __name__ == "__main__":
 #    app.run()
