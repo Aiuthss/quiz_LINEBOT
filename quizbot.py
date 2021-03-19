@@ -18,6 +18,8 @@ line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 switch = 0
 categories = ["history","computer","medicine"]
+#flag = {}
+quiz = {}
 
 page_dict = {}
 for category in categories:
@@ -175,26 +177,23 @@ def handle_message(event):
 
 @handler.add(PostbackEvent)
 def handle_postback(event):
-    global switch
     print(event.postback.data)
-    if event.postback.data in categories and switch == 0:
+#    if event.user_id not in flag.keys():
+#        flag[event.user_id] = 0
+    if event.postback.data in categories:
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
-            global quiz
-            quiz = make_quiz(event.postback.data)
-            quiz_message = make_quiz_button_template(quiz)
+            quiz[event.user_id] = make_quiz(event.postback.data)
+            quiz_message = make_quiz_button_template(quiz[event.user_id])
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
         except LineBotApiError as e:
-            switch = 0
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="Error!"))
             print(str(e))
         else:
-            switch = 1
     elif event.postback.data in ["0","1","2","3"]:
-        switch = 0
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz["response"][int(event.postback.data)]))
-        del quiz
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz[event.user_id]["response"][int(event.postback.data)]))
+        quiz[event.user_id] = None
 
 if __name__ == "__main__":
 #    app.run()
