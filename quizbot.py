@@ -70,13 +70,21 @@ def createRichmenu():
     return result
     
 def make_quiz_button_template(quiz):
+    labels = []
+    for i in range(4):
+        label = quiz["choices"][i]
+        s = re.search("\(|\（", label)
+        if s:
+            label = label[:s.start()]
+        labels.append(label)
+
     message_template = TemplateSendMessage(
         alt_text = "非対応",
         template = ButtonsTemplate(
             text = quiz["question"][:160],
             actions = [
                 PostbackAction(
-                    label = quiz["choices"][i][:re.search("\(|\（", quiz["choices"][i]).start()],
+                    label = labels[i],
                     data = str(i)
                 )
                 for i in range(4)
