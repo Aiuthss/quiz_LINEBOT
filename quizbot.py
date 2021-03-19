@@ -76,58 +76,48 @@ def make_quiz_button_template(quiz):
     )
     return message_template
 
-def make_quiz(keyword):
-    reference = make_reference(keyword)
+def make_quiz(category):
+    reference = make_reference(category)
     return make_response(reference)
 
-def make_response(result):
-    answer = random.choice(range(4))
-    question = result[answer][1]
-    choices = [i[0] for i in result]
-    response = []
-    for i in range(4):
-        if i==answer:
-            response.append("正解！" + "\n" + result[answer][0] + "\n" + result[answer][1])
-        else:
-            response.append("不正解！" + "\n" + result[answer][0] + "\n" + result[answer][1])
-    return {"question":question,"choices":choices,"response":response,"answer":answer}
-
-def make_reference(keyword):
+def make_reference(category):
+    reference = {}
+    words = page_dict[category]
     counter = 0
-    result = []
     while True:
         if counter == 4:
             break
         else:
             try:
-                result.append(get_article(keyword))
+                random_word = random.choice(words)
+                n = requests.get("https://ja.wikipedia.org/wiki/"+random_word)
+                soup = BeautifulSoup(n.text,"html.parser")
+                # delete warnings of wikipedia above summary
+                for tag in soup.findAll(["tr"]):
+                    tag.decompose()
+
+                title = soup.find("h1").text
+                soup.find("p").b.decompose()
+                summary = soup.find("p").text
+                summary = delete_kakko(summary)[:-1]
+                reference[title] = summary
             except:
                 pass
             else:
                 counter += 1
-    return result
+    return reference
 
-def get_article(keyword):
-    while True:
-        # get random wikipedia page
-        page = requests.get("https://ja.wikipedia.org/wiki/特別:カテゴリ内おまかせ表示/"+keyword)
-
-        # make BeautifulSoup object
-        soup = BeautifulSoup(page.text,"html.parser")
-
-        # delete warnings of wikipedia above summary
-        for tag in soup.findAll(["tr"]):
-            tag.decompose()
-
-        title = soup.find("h1").text
-        soup.find("p").b.decompose()
-        summary = soup.find("p").text
-        summary = delete_kakko(summary)[:-1]
-
-        if len(title)<=20 and soup.find("a", accesskey="c").text == "ページ":
-            break
-
-    return title, summary
+def make_response(reference):
+    answer = random.choice(range(4))
+    question = list(reference.values())[answer]
+    choices = list(reference.keys())
+    response = []
+    for i in range(4):
+        if i==answer:
+            response.append("正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
+        else:
+            response.append("不正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
+    return {"question":question,"choices":choices,"response":response,"answer":answer}
 
 # delete first kakko
 def delete_kakko(text):
@@ -184,7 +174,7 @@ def handle_postback(event):
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
             global quiz
-            quiz = make_quiz(categories[event.postback.data])
+            quiz = make_quiz(event.postback.data)
             quiz_message = make_quiz_button_template(quiz)
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
