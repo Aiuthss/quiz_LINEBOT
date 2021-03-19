@@ -1,5 +1,6 @@
 from flask import Flask, request, abort
 import os
+import re
 from bs4 import BeautifulSoup
 import requests
 import random
@@ -17,7 +18,15 @@ YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 switch = 0
-categories = {"history":"日本史の人物", "computer":"コンピュータ", "medicine":"医学"}
+categories = ["history","computer","medicine"]
+#flag = {}
+quiz = {}
+
+page_dict = {}
+for category in categories:
+    path = category + ".txt"
+    with open(path) as f:
+        page_dict[category] = [i.strip() for i in f.readlines()]
 
 def createRichmenu():
     try:
@@ -61,13 +70,21 @@ def createRichmenu():
     return result
     
 def make_quiz_button_template(quiz):
+    labels = []
+    for i in range(4):
+        label = quiz["choices"][i]
+        s = re.search("\(|\（", label)
+        if s:
+            label = label[:s.start()]
+        labels.append(label)
+
     message_template = TemplateSendMessage(
         alt_text = "非対応",
         template = ButtonsTemplate(
             text = quiz["question"][:160],
             actions = [
                 PostbackAction(
-                    label = quiz["choices"][i],
+                    label = labels[i],
                     data = str(i)
                 )
                 for i in range(4)
@@ -76,58 +93,49 @@ def make_quiz_button_template(quiz):
     )
     return message_template
 
-def make_quiz(keyword):
-    reference = make_reference(keyword)
+def make_quiz(category):
+    reference = make_reference(category)
+    print(reference)
     return make_response(reference)
 
-def make_response(result):
-    answer = random.choice(range(4))
-    question = result[answer][1]
-    choices = [i[0] for i in result]
-    response = []
-    for i in range(4):
-        if i==answer:
-            response.append("正解！" + "\n" + result[answer][0] + "\n" + result[answer][1])
-        else:
-            response.append("不正解！" + "\n" + result[answer][0] + "\n" + result[answer][1])
-    return {"question":question,"choices":choices,"response":response,"answer":answer}
-
-def make_reference(keyword):
+def make_reference(category):
+    reference = {}
+    words = page_dict[category]
     counter = 0
-    result = []
     while True:
         if counter == 4:
             break
         else:
             try:
-                result.append(get_article(keyword))
+                random_word = random.choice(words)
+                n = requests.get("https://ja.wikipedia.org/wiki/"+random_word)
+                soup = BeautifulSoup(n.text,"html.parser")
+                # delete warnings of wikipedia above summary
+                for tag in soup.findAll(["tr"]):
+                    tag.decompose()
+
+                title = soup.find("h1").text
+                soup.find("p").b.decompose()
+                summary = soup.find("p").text
+                summary = delete_kakko(summary)[:-1]
+                reference[title] = summary
             except:
                 pass
             else:
                 counter += 1
-    return result
+    return reference
 
-def get_article(keyword):
-    while True:
-        # get random wikipedia page
-        page = requests.get("https://ja.wikipedia.org/wiki/特別:カテゴリ内おまかせ表示/"+keyword)
-
-        # make BeautifulSoup object
-        soup = BeautifulSoup(page.text,"html.parser")
-
-        # delete warnings of wikipedia above summary
-        for tag in soup.findAll(["tr"]):
-            tag.decompose()
-
-        title = soup.find("h1").text
-        soup.find("p").b.decompose()
-        summary = soup.find("p").text
-        summary = delete_kakko(summary)[:-1]
-
-        if len(title)<=20 and soup.find("a", accesskey="c").text == "ページ":
-            break
-
-    return title, summary
+def make_response(reference):
+    answer = random.choice(range(4))
+    question = list(reference.values())[answer]
+    choices = list(reference.keys())
+    response = []
+    for i in range(4):
+        if i==answer:
+            response.append("正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
+        else:
+            response.append("不正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
+    return {"question":question,"choices":choices,"response":response,"answer":answer}
 
 # delete first kakko
 def delete_kakko(text):
@@ -178,29 +186,24 @@ def handle_message(event):
 
 @handler.add(PostbackEvent)
 def handle_postback(event):
-    global switch
     print(event.postback.data)
-    if event.postback.data in categories.keys() and switch == 0:
+#    if event.source.user_id not in flag.keys():
+#        flag[event.source.user_id] = 0
+    if event.postback.data in categories:
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
-            global quiz
-            quiz = make_quiz(categories[event.postback.data])
-            quiz_message = make_quiz_button_template(quiz)
+            quiz[event.source.user_id] = make_quiz(event.postback.data)
+            quiz_message = make_quiz_button_template(quiz[event.source.user_id])
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
         except LineBotApiError as e:
-            pass
-        else:
-            switch = 1
+            line_bot_api.push_message(event.source.user_id,TextSendMessage(text="Error!"))
+            print(str(e))
     elif event.postback.data in ["0","1","2","3"]:
-        switch = 0
-        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz["response"][int(event.postback.data)]))
-        del quiz
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz[event.source.user_id]["response"][int(event.postback.data)]))
+        quiz[event.source.user_id] = None
 
 if __name__ == "__main__":
 #    app.run()
     port = int(os.getenv("PORT"))
     app.run(host="0.0.0.0", port=port)
-
-
-
