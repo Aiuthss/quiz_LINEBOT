@@ -189,7 +189,7 @@ def handle_postback(event):
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
         except LineBotApiError as e:
-            pass
+            print(str(e))
         else:
             switch = 1
     elif event.postback.data in ["0","1","2","3"]:
