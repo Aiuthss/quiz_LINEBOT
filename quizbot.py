@@ -17,7 +17,13 @@ YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 switch = 0
-categories = {"history":"日本史の人物", "computer":"コンピュータ", "medicine":"医学"}
+categories = ["history","computer","medicine"]
+
+page_dict = {}
+for category in categories:
+    path = category + ".txt"
+    with open(path) as f:
+        page_dict[category] = [i.strip() for i in f.readlines()]
 
 def createRichmenu():
     try:
