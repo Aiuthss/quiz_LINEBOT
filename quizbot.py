@@ -17,7 +17,13 @@ YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 switch = 0
-categories = {"history":"日本史の人物", "computer":"コンピュータ", "medicine":"医学"}
+categories = ["history","computer","medicine"]
+
+page_dict = {}
+for category in categories:
+    path = category + ".txt"
+    with open(path) as f:
+        page_dict[category] = [i.strip() for i in f.readlines()]
 
 def createRichmenu():
     try:
@@ -78,6 +84,7 @@ def make_quiz_button_template(quiz):
 
 def make_quiz(category):
     reference = make_reference(category)
+    print(reference)
     return make_response(reference)
 
 def make_reference(category):
@@ -170,7 +177,7 @@ def handle_message(event):
 def handle_postback(event):
     global switch
     print(event.postback.data)
-    if event.postback.data in categories.keys() and switch == 0:
+    if event.postback.data in categories and switch == 0:
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
             global quiz

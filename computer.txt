@@ -2,10 +2,6 @@
 100メガビット・イーサネット
 11インチiPad Pro (第1世代)
 11インチiPad Pro (第2世代)
-12.9インチiPad Pro (第1世代)
-12.9インチiPad Pro (第2世代)
-12.9インチiPad Pro (第3世代)
-12.9インチiPad Pro (第4世代)
 2-3-4木
 2-3木
 2079年問題
@@ -26,7 +22,6 @@
 9.7インチiPad Pro
 98NOTE
 98ローカルバス
-Exterior Gateway Protocol
 A+
 A-VX
 A/UX
@@ -34,11 +29,9 @@ AAA プロトコル
 ABAP
 ABC 80
 ABC 800
-Access Linux Platform
 ACDSee
 ActionScript
 Active Server Pages
-Active Template Library
 ActiveBasic
 ActivePerl
 ActiveX
@@ -49,10 +42,6 @@ ADO.NET
 Adobe Bridge
 Adobe Dimensions
 ADS-win
-Advanced Encryption Standard
-Advanced eXtensible Interface
-Advanced Host Controller Interface
-Advanced SCSI Programming Interface
 AFRINIC
 AiBrowser
 AIFF
@@ -61,15 +50,12 @@ Aile
 AIM Mail
 AirSnort
 AI実装検定
-Alert Standard Format
 Alien (ソフトウェア)
 Alioth (Debian)
-Alliance for Open Media
 Altix
 Am386
 Am486
 Am80286
-AMD Accelerated Parallel Processing
 AMD Catalyst
 AMD FirePro
 AMD K6
@@ -77,20 +63,16 @@ AMD K6-2
 AMD K6-III
 AMD Phenom
 AMD Phenom II
-Additive Manufacturing File Format
 AmigaOne
 AMS-TeX
 AMule
-Analog Telephony Adapter
 Ancient UNIX
-Android Development Tools
 Android TV
 Wear OS
 Android-x86
 AnoNet
 Another HTML-lint
 Anthologys
-AOL Instant Messenger
 Apache Axis
 Apache OpenNLP
 Apache POI
@@ -104,16 +86,11 @@ Apple A4
 Apple A8
 Apple A9
 Apple Desktop Bus
-Apple Developer Connection
-Apple Developers Tools
-Apple Display Connector
 Apple Remote Desktop
 Apple S6
 Apple Special Event
-Apple Type Services for Unicode Imaging
 Apple User Group
 Apple W1
-Apple Workgroup Server
 AppleWin
 Appleシリコン
 Aptiva
@@ -125,12 +102,9 @@ AR Commons
 ARCHITREND ZERO
 ARIN
 ARPスプーフィング
-Artificial Linguistic Internet Computer Entity
 AsiaBSDCon
 ASIO
 AspectJ
-Association for Computing Machinery
-Association of anti Virus Asia Researchers
 Athlon 64
 Athlon 64 FX
 Athlon 64 X2
@@ -142,9 +116,7 @@ Atol
 ATRAC CD
 ATRAC Audio Device
 ATX
-Audio Video Interleave
 AudioMASTER
-Automatic Acoustic Management
 Autonomica
 Autotools
 AVFoundation
@@ -170,23 +142,19 @@ BeBox
 BEE CARD
 Beep Media Player
 Befunge
-Bing Maps for Enterprise
 BinHex
 BIOS割り込みルーチン
 BitComet
 BitLog
 Bitmusic
-Blu-ray Disc アソシエーション
 BlueBox
 BootX (アップル)
-Border Gateway Protocol
 BPCS-Steganography
 BPEL
 BrainPad TiPO
 Brazil R/S
 Break文
 Bridge パターン
-Browser Helper Object
 Bryce
 BSS-ID
 BTX
@@ -210,13 +178,11 @@ CAST-128
 CAST-256
 Caudium
 CAV
-Cave automatic virtual environment
 CC-Link
 Cd (UNIX)
 CDDB
 CDMA 1X WIN
 CeBIT
-CERT Coordination Center
 CFL条件
 ChaSen
 CHECK制約
@@ -235,17 +201,11 @@ ClickOnce
 CLIE
 CNS 11643
 Code Reading
-Comma-Separated Values
 COMMAND.COM
-Common Management Information Protocol
-Communication Access Programming Language
 Compis
 CompuServe
-Computer Based Testing
-Computer Typesetting System
 COMPUTEX TAIPEI
 Conary
-Concurrency and Coordination Runtime
 Continue文
 Cooler Master
 Copland
@@ -273,12 +233,10 @@ D9-VTR
 Daala
 Daemontools
 Dashcode
-Datagram Congestion Control Protocol
 DAZ Studio
 Dazuko
 Dbm
 DCC (IRC)
-DCE Distributed File System
 DCE/RPC
 DDR SDRAM
 DDR2 SDRAM
@@ -286,7 +244,6 @@ DDR4 SDRAM
 DDX-TP
 Deb (ファイルフォーマット)
 DebConf
-Debian Almquist shell
 Debian GNU/Hurd
 Debianインストーラ
 Deflate
@@ -309,8 +266,6 @@ DirectShow Media
 DIS 10646
 DISK-BASIC
 Distcc
-Distributed Component Object Model
-Distributed Sender Blackhole List
 DivX
 DiXiM
 Djbdns
@@ -346,7 +301,6 @@ DWG
 DXTC
 DXライブラリ
 Dylan
-Dynamic synchronous Transfer Mode
 DYSEAC
 D言語
 E (計算複雑性理論)
@@ -364,9 +318,6 @@ EGBRIDGE
 EGWORD
 EIA-574
 Embedded GLIBC
-Encounter RTL Compiler
-Endpoint Handlespace Redundancy Protocol
-Energy Efficient Ethernet
 EP-101
 ERC32
 EROFS
@@ -383,11 +334,6 @@ Express5800
 Ext2
 Ext3
 Ext4
-Extended Graphics Array
-Extended Industry Standard Architecture
-Extended Validation 証明書
-Extensible Business Reporting Language
-Extensible HyperText Markup Language
 Exynos
 EZ80
 F2FS
@@ -396,7 +342,6 @@ False (UNIX)
 FC-NOTE
 FeliCaポート
 Fgets
-Fiber distributed data interface
 Ficl
 FICON
 FIGlet
@@ -424,22 +369,17 @@ Front Row
 FTPクライアント
 FTフォン
 Fub.net
-Fuchsia (オペレーティングシステム)
-FUJITSU Cloud Service K5
 FutureBASIC
 G DATA アンチウイルスキット
 G.711
 G200シリーズ
 G400シリーズ
 Garnet OS
-Gateway Load Balancing Protocol
 Gauche
-Gaucho Internet Mailer
 GDDR5
 GDDR6 SDRAM
 Gdi++
 GENIO e
-Geography Markup Language
 Gets
 GigaRec
 GIMPS
@@ -471,8 +411,6 @@ Gpl-violations.org
 GPS絵画
 Grani
 Graph500
-Graphical Kernel System
-Graphics Environment Manager
 Groklaw
 Group Of Pictures
 Guardian
@@ -492,9 +430,6 @@ HD Photo
 HD64180
 HE-AAC
 HFS Plus
-Hierarchical File System
-High Level Shading Language
-High-Level Data Link Control
 Horizon Air
 Hot Soup Processor
 HP 9100A
@@ -525,7 +460,6 @@ IDE変換
 IDVD
 IEEE 802.14
 IEEE 802.20
-IEEE Computer Society
 If800
 If文
 IgRemote
@@ -534,12 +468,8 @@ ILife
 ILLIAC III
 IMac (インテルベース)
 IMAGING SQUARE
-Ipswitch IMail Server
 ImgTool Classic
 IMP-16
-Inbound Port 25 Blocking
-Industry Standard Architecture
-Integrated Graphics Processor
 Intel 4040
 Intel 80188
 Intel 8087
@@ -552,27 +482,16 @@ Intel A100
 Intel C++ Compiler
 Intel Core
 Intel Core M
-Intel Extreme Graphics
 Intel GMA
 Intel Inboard 386
-Intel Parallel Studio
-Intel SpeedStep テクノロジ
 Intel Xe
 IntelliStation Pro
-Interactive Connectivity Establishment
-Interior Gateway Protocol
-Internationalized Resource Identifier
-Internet Control Message Protocol
-Internet Control Message Protocol for IPv6
 Internet Explorer 6
 Internet Explorer 7
 Internet Explorer 8
-Internet Explorer for Mac
-Interoperable Object Reference
 INTEROS
 Interpreter パターン
 Interstage
-Interstage Shunsaku Data Manager
 IOCCC
 Ioctl
 IPA (ファイルフォーマット)
@@ -611,10 +530,6 @@ ITスキル標準
 IVDR
 IWeb
 IXシリーズ
-Java Native Interface
-Java Platform, Micro Edition
-Java Remote Method Invocation
-Java Web Services Development Pack
 JavaCC
 JavaFX
 Javapedia
@@ -625,22 +540,17 @@ Jaz
 JBIG
 Jcode.pl
 E資格
-JDLA Deep Learning For GENERAL
 JEF漢字コード
 JFFS2
 JIS X 0201
 JIS X 0221
-Joint Photographic Experts Group
-Journaled File System
 JPEG XL
 JScape
 K56flex
 Kazaa Lite
-KDE Accessibility Project
 KDEBase
 Keygen
 Kinesis
-Kinetics Internet Protocol
 KOHJINSHA SA
 KOHJINSHA SH
 Kotlin
@@ -658,9 +568,7 @@ LaserWriter
 LaserWriter II NTX-J
 LAVIE
 LaVieの機種一覧
-Layer 2 Tunneling Protocol
 LDAC
-Lempel–Ziv–Storer–Szymanski
 Lempel–Ziv–Welch
 LG K50
 LGA1150
@@ -684,11 +592,7 @@ LifeCam
 Lifehack
 LimeChat
 LimeSDR
-Link Layer Topology Discovery
-Linux Kernel Conference
-Linux Security Modules
 Linux.conf.au
-LinuxWorld Conference & Expo
 Linuxクラスター
 Linuxマシン
 Linuxシンポジウム
@@ -697,7 +601,6 @@ Live Commerce
 Live Mesh
 LiveCode
 LNW-80
-Load-Link/Store-Conditional
 LOGCFL
 Lola
 Lotus Script
@@ -739,10 +642,8 @@ Maple
 Mark-8
 Matchbox
 Mate (デスクトップパソコン)
-Mathematical Markup Language
 Matrox Millennium
 Matrox Mシリーズ
-Matrox Ultima, Impression
 MAXART
 MC68010
 MC6802
@@ -753,45 +654,31 @@ MDGRAPE-3
 Mdiapp
 MDSR暗号
 Media Foundation
-Media Oriented Systems Transport
 Media Go
 Megaco
-Memory Technology Device
 MEMSメモリ
 Memtest86
 Mental ray
-Message Passing Interface
 Metax
 Mew
 MHTML
 MH符号
-Micro Embbeded System
 Micro-DVI
 Micro-Mainframe Link
 MicroPython
 Microsoft ActiveSync
-Microsoft Certified Trainer
-Microsoft Clustering Service
-Microsoft Foundation Class
 Microsoft HoloLens
 Microsoft Imagine
 Microsoft InfoPath
-Microsoft Most Valuable Professional
 Microsoft MPEG-4
-Microsoft Office Specialist
 Microsoft PixelSense
 Microsoft Publisher
 Microsoft Servers
-Microsoft SQL Server Management Studio
 Microsoft Surface
 Microsoft TechNet
 Microsoft Update
 Microsoft Visio
-Microsoft Windows Home Server
-Microsoft Windows Installer
-Microsoft Windows Internet
 Microsoft Windows RT
-Microsoft Windows Server 2008
 Midori Linux
 MindTouch Deki
 MinGW
@@ -836,10 +723,7 @@ MSX-SYSTEMII
 MSYS
 MudBox
 MUGI
-Multicast Listener Discovery
-Multiple Document Interface
 MUMPS
-Music Markup Language
 Music Player Daemon
 MUSIC-N
 Music.jp
@@ -859,16 +743,12 @@ NEC V25
 Nefry
 Nehalemマイクロアーキテクチャ
 Nemerle
-.NET Compact Framework
 Netatalk
 NetBEUI
 NetBoot
 Netcat
-Network Driver Interface Specification
-Network News Transfer Protocol
 NEUTRINO
 New Executable
-Newsgroup Management Protocol
 NEXTBASE
 NEXTCAP
 NeXTcube
@@ -889,14 +769,11 @@ NVIDIA CUDA Compiler
 NVIDIA ION
 NVIDIA Quadro
 NVIDIA RIVA
-Nvidia テスラ パーソナル スーパーコンピュータ
 NWP-20
 NWSTK
 NXビット
 Nキーロールオーバー
-Object Linking and Embedding
 Object Pascal
-Object Request Broker
 Object REXX
 Obniz
 ODROID
@@ -908,18 +785,12 @@ The Omni Group
 OnNow
 ONTAP (OS)
 ONVIF
-Open Data-Link Interface
-Open Embedded Software Foundation
-Open Shading Language
-Open Shortest Path First
-Open Source Virtual Reality
 OpenCL
 OpenCores
 OpenDoc
 OpenFormula
 OpenGL ES
 OpenMP
-Replicant (オペレーティングシステム)
 Opteron
 ORB
 ORDVAC
@@ -927,8 +798,6 @@ OS X Mountain Lion
 Osaka (書体)
 OSF/1
 OSS iPedia
-Outbound Port 25 Blocking
-Outline Processor Markup Language
 Oxygen Project
 P2
 P2P@i
@@ -939,12 +808,9 @@ Pages
 PAICS
 Pandas
 ParaFla!
-Parallel Virtual Machine
 Parallella
-Parallels Virtuozzo Containers
 Parhelia
 PASCII
-Pass-to-Userspace Framework File System
 PASW Statistic
 PBASIC
 PC-100
@@ -960,7 +826,6 @@ PDF/A
 PDF/X
 PDMI
 Pentium 4-M
-Perceptual User Interface
 Perfect Dark
 Periscope
 PerlScript
@@ -978,15 +843,12 @@ Pixel 3a
 PL/SQL
 Plain Old CLR Object
 PLAY Animation
-Plesiochronous Digital Hierarchy
 PLU
 PlusCal
 PNET
 POBox
 PocketZip
 Point Cloud Library
-Point to Point Tunneling Protocol
-Point-to-Point Protocol
 Polipos
 POPFile
 Portable Executable
@@ -995,12 +857,10 @@ Portland Project
 POSIX
 POSIX 1003.1b
 PostmarketOS
-PostScript Printer Description
 POWER (マイクロプロセッサ)
 Power Mac
 Power Mac G4 Cube
 Power Macintosh 4400
-Power Macintosh G3 (Blue & White)
 Power Systems
 PowerBook
 PowerBook 2400c
@@ -1014,8 +874,6 @@ PowerNow!
 PQI
 PR (計算複雑性理論)
 Prattパーサ
-Prediction by Partial Matching
-Preferred Executable Format
 Pretty Good Privacy
 PRIMEPOWER
 PRIMEQUEST
@@ -1024,8 +882,6 @@ PrimoPDF
 Privoxy
 Profes
 ProGet
-Program Composition Notation
-Property Specification Language
 PS/2コネクタ
 PSoC
 Psyscope
@@ -1045,12 +901,8 @@ QH-55/J
 Qosmio
 Qpopper
 QRIO
-Quake-Catcher Network
-Quarter Inch Cartridge
-Quarter Video Graphics Array
 QuickBASIC
 QuickDraw Picture
-QuickTime Streaming Server
 QUnit
 QWERTY配列
 QWERTZ配列
@@ -1066,8 +918,6 @@ Ratfor
 RAYDAC
 RE (計算複雑性理論)
 Re:
-Real-Time Specification for Java
-Real-time Transport Protocol
 RealAudio
 RealMedia
 RealVideo
@@ -1075,10 +925,7 @@ Red Pitaya
 REDUCE (数式処理システム)
 Registered jack
 ReiserFS
-Reliable User Datagram Protocol
-RenderMan Shading Language
 Reservation Station
-Resource Description Framework
 Return文
 REXX
 RFB Protocol
@@ -1096,10 +943,8 @@ RMP4
 Roff
 Rolanet
 ROM-BASIC
-Routing Information Protocol
 RPM (ファイルフォーマット)
 RTP Control Protocol
-Run Length Limited encoding
 Rust Foundation
 S-BASIC
 S1990
@@ -1109,47 +954,35 @@ SAI
 SARA (コンピュータ)
 Sasser
 Savage
-Schema for Object-Oriented XML
 SCore
 SD-Audio
 SecuRec
-Security-Enhanced Linux
 Sed (コンピュータ)
 Segoe
 SEIL
-Self-Monitoring, Analysis and Reporting Technology
 Sempron
 Senna
 Sente
 SerDes
 Serial Attached SCSI
-Serial Line Internet Protocol
 Server Side Includes
-Session Description Protocol
-Session Initiation Protocol
 SFL
 SFlow
 SH-2 (プロセッサ)
-Shakespeare (プログラミング言語)
 Microsoft SharePoint
 SheevaPlug
 Shopformer
 Shotcut
 Sibelius
-SIL Open Font License
-Silicon Graphics 320 / 540
 SillyP2P
 SIMD
-Single Document Interface
 SISD
 SI・SO制度
 Sj3
 SkeedCast
-Skypeパートナーズ・コミュニティー日本
 SLATEC
 Slitaz
 SMAF
-Small Computer System Interface
 SMBIOS
 SMILE (ソフトウェア)
 SMTPS
@@ -1157,7 +990,6 @@ SNOBOL
 Socket 5
 Socket AM3
 Socket AM3+
-Software Freedom Law Center
 SolidAudio
 SONY MESH
 Sound Blaster
@@ -1165,7 +997,6 @@ SoundFont
 SPARC T4
 SPARCstation 1
 SparQ
-Special Interest Group
 SPN構造
 SpotOCR
 SPRESENSE
@@ -1173,38 +1004,29 @@ SRAMカード
 SRPM
 Sshnuke
 Standard PHP Library
-Standard Template Library
-Standards Western Automatic Computer
 StarLogo
 StartForce
 Strand
 Strcmp
-Stream Control Transmission Protocol
 Strlcat
 Strlcpy
 Strlen
 Su (Unix)
-Sun Modular Datacenter
-Sunbelt Personal Firewall
 SunCluster
 神威藍光
 神威・太湖之光
 SUPER-UX
 SuperCollider
-Surrounding Gate Transistor
 Suzuka
 SVRT
 Sweet16
 Sweetmail
 Swing
-Switched Multi-megabit Data Services
 Switch文
 SX-OS
 Sylera
-Synchronous Data Link Control
 System p
 System Storage
-System V Interface Definition
 System x
 System.map
 Systemwalker
@@ -1218,7 +1040,6 @@ Tasman
 TCPやUDPにおけるポート番号の一覧
 Tenems
 Tenki.jp
-Terminate and Stay Resident
 TestNG
 TGA
 ThinkPad A
@@ -1243,7 +1064,6 @@ Trident
 TRIOLE
 True (UNIX)
 TrueType
-Trusted Platform Module
 TTA
 TTSneo
 Tty
@@ -1256,21 +1076,15 @@ U3
 UART
 Udev
 UL20A
-Ultra Density Optical
-Ultra Extended Graphics Array
 Ultra SPARC IIIi
 Ultra-Mobile PC
 UnDonut
 Unibus
 Unidraf
 Unified EFI Forum
-Uniform Naming Convention
-Uniform Type Identifier
-Universal Powerline Association
 UNIX Compress
 UNIX International
 UNIX System III
-Unix to Unix Copy Protocol
 Unladen Swallow
 UP (計算複雑性理論)
 UP-UX
@@ -1302,13 +1116,8 @@ VIA Nano
 Video for Windows
 Viiv
 Vikidia
-Virtual Local Area Network
-Virtual Private Network
-Virtual Router Redundancy Protocol
-Virtual Switching System
 Virtuality
 VIS (汎用機)
-Microsoft Visual C Sharp
 Microsoft Visual C++
 Microsoft Visual J++
 VLIW
@@ -1326,18 +1135,13 @@ W32TeX
 Wake-on-LAN
 WASAPI
 WAV
-Web Application Firewall
-Web Server Gateway Interface
-Web Services Description Language
 WebOTX
 Webサービス
 Webテスト
 Welomoch
 Whetstone
 While文
-White Box Enterprise Linux
 Wi-Fi
-Wi-Fi Protected Setup
 WICS
 WikiServer
 Win/V
@@ -1347,25 +1151,18 @@ Winbiff
 WinChip
 Window Maker
 Windows 9x系
-Windows Anytime Upgrade
 Windows API
 Windows Automotive
 Windows Boot Manager
 Windows Calendar
 Windows Explorer
 Windows Forms
-Windows Genuine Advantage
-Windows Internet Naming Service
 Windows Journal
 Windows Live Mesh
 Windows Mail
 Windows Media Audio
-Windows Mixed Reality
-Windows Printing System
 Windows Server
-Windows SharePoint Services
 Windows Sysinternals
-Windows Template Library
 Windows システム評価ツール
 Windows カラー システム
 Windows タスク マネージャー
@@ -1381,7 +1178,6 @@ Wireless USB
 Wireshark
 Wonderfl
 WordMail
-Worldwide Developers Conference
 WPC EXPO
 Write-combining
 WS-Routing
@@ -1398,8 +1194,6 @@ Xfy
 XGI Technology Inc.
 Xgl
 XMedia Recode
-XML Paper Specification
-XML Process Definition Language
 XRandR
 Xserve
 XSP (Webサーバ)
@@ -1447,7 +1241,6 @@ I-Sprint Innovations
 Iタウンページ
 ITap
 ITアウトソーシング
-IT Service Management Forum
 ITゼネコン
 ITインフラストラクチャ
 IT断食
@@ -1475,7 +1268,6 @@ Active Virus Shield
 アクロニス
 ASAHIパソコン
 アジア太平洋機械翻訳協会
-Asia-Pacific Network Information Centre
 アジレント・テクノロジー
 アスキーネット
 アスペクト指向プログラミング
@@ -1494,8 +1286,6 @@ Apple Remote
 アップロード
 Ad-Aware
 アドテック
-Advanced Communication Riser
-Advanced Intelligent Tape
 Advantech
 アドミッション制御
 マーク・アドラー
@@ -1546,14 +1336,12 @@ ISSEI (検索)
 インストール
 インターネットセキュリティスイート
 INTERNET magazine
-インターナショナル・カラー・コンソーシアム
 インターネットスイート
 インタラクティブシェル
 インデクサ
 インテゴ
 インデックスロック
 Interix
-Microsoft IntelliMouse
 インテル・デベロッパー・フォーラム
 インフィオラータ
 インフォスフィア
@@ -1582,7 +1370,6 @@ WEB
 Web Operating System
 Webコンテナ
 Webサーバ
-Web Diary Professional
 Webプログラミング
 Webメール
 ハラルト・ヴェルテ
@@ -1601,14 +1388,11 @@ HTTP cookie
 HD-BURN
 HuC62
 Aterm
-AWS Certificate Manager
 Auひかり
 Au BOX
 Au one net
 AOpen
 Excite
-External Data Representation
-Exchangeable image file format
 エクストラネット
 ExpressCard
 Xperia Z4 Tablet
@@ -1659,7 +1443,6 @@ LG G Watch
 エレクトロニクスライフ
 エレコム
 演算装置
-エンジニアリングサービス (デジタル放送)
 遠藤紘一
 EndNote
 エントラスト
@@ -1684,11 +1467,9 @@ Audio Codec 97
 オーバーレイ (コンピュータ用語)
 オーバーレイ・ネットワーク
 Oh!PC
-Open Archives Initiative Protocol for Metadata Harvesting
 オープン仮想化フォーマット
 OpenCanvas
 オープンシステム (コンピュータ)
-Open Source Development Network
 大向一輝
 岡嶋裕史
 岡山情報ハイウェイ
@@ -1835,7 +1616,6 @@ Quanp
 クラス変数
 クラッキング (コンピュータ)
 クラッシュ (コンピュータ)
-Granite Rapids マイクロアーキテクチャ
 ジョン・グラハム＝カミング
 グラフィックアクセラレータ
 グラフィックコントローラ
@@ -1915,7 +1695,6 @@ CALL FOR CODE
 互換機
 互換モード
 語義の曖昧性解消
-国際難読javascriptコードコンテスト
 COCOMO
 戸籍システム
 戸籍統一文字
@@ -1935,13 +1714,11 @@ COCOMO
 ComicWorks
 コミッター
 コミット (データ管理)
-Communication and Networking Riser
 コミュニケーションパル
 コミュニティーエンジン
 コミュファ
 コミラボ
 Comet
-COMODO Internet Security
 Commodore CDTV
 ベン・コリンズ (プログラマー)
 ゴルゴンゾーラ (企業)
@@ -1958,7 +1735,6 @@ Concept (コンピュータウイルス)
 コンテナ (データ型)
 コンテンツ管理システム
 コンテンツプロバイダ
-Content Scramble System
 コントロールストア
 コンパクトPCI
 コンパック Cシリーズ
@@ -1976,7 +1752,6 @@ Content Scramble System
 コンポーネント図
 サードパーティー
 サーバファーム
-Service Component Architecture
 サービス水準合意
 サービスデリバリ
 サービス・プロバイダ
@@ -1999,7 +1774,6 @@ Ciklone
 サウンドカード
 ステファノ・ザッキローリ
 サクラ (ソフトウェア)
-Sakura Script Transfer Protocol
 佐々木博
 TheSpoke
 ジョナサン・ザックス
@@ -2016,9 +1790,7 @@ ZALMAN
 沢田康次
 Sun SPOT
 三大コンピューターグループ
-サンディエゴ・スーパーコンピュータ・センター
 サンディスク
-Sandy Bridgeマイクロアーキテクチャ
 3.4GHz帯
 サンプル (グラフィックス)
 三分探索木
@@ -2039,7 +1811,6 @@ SIMA
 試運転
 シェアード・ナッシング・アーキテクチャ
 シェアソート
-Microsoft Office SharePoint Designer
 JPNAP
 JUNET
 シェーカーソート
@@ -2089,7 +1860,6 @@ G DATA Software
 自動作曲
 Sinatra
 Synaptics
-CDisplay RAR Archived Comic Book File
 シフトキー
 シミュレーティド・エボリューション
 ジム・カジヤ
@@ -2099,7 +1869,6 @@ CDisplay RAR Archived Comic Book File
 ジャスティオ
 シャットダウン・デー
 シャドーIT
-Japan Gigabit Network
 ジャパンデータストレージフォーラム
 JANOG
 シュウォッチ
@@ -2136,7 +1905,6 @@ SugarCRM
 情報処理国際連合
 情報処理用語規格
 情報セキュリティスペシャリスト試験
-情報セキュリティのガイドライン、標準規格、法制度等の一覧
 情報セキュリティマネジメント試験
 情報抽出
 情報哲学
@@ -2190,7 +1958,6 @@ SC/MP
 Squirrel
 スケアウェア
 図形文字
-Scalable Link Interface
 鈴木直義 (情報学者)
 Stata
 リチャード・スターンズ
@@ -2217,7 +1984,6 @@ SNIA
 Snow (コーデック)
 スパースファイル
 Spyware Doctor
-Spybot - Search & Destroy
 SuperDrive
 Supermicro
 スピーカー (コンピュータ)
@@ -2275,7 +2041,6 @@ ZERO LATENCY
 全国高等専門学校プログラミングコンテスト
 潜在的に迷惑なアプリケーション
 1800MHz帯
-想 - IMAGINE Book Search
 総当たり攻撃
 操作的意味論
 操作変換
@@ -2317,7 +2082,6 @@ Digest認証
 耐タンパー性能
 タイタン・レイン
 タイトルバー
-Dynamic Tunnel Configuration Protocol
 第2アジア・太平洋ケーブルネットワーク
 TinyURL
 ダイノバイザー
@@ -2357,7 +2121,6 @@ Times New Roman
 Tandberg RDX
 地域インターネットレジストリ
 陳盈豪
-スティーブ・チェン (スーパーコンピュータ設計者)
 遅延書き込み
 遅延読み込み
 知識工学
@@ -2367,7 +2130,6 @@ Tandberg RDX
 チャンドラ (ノートパソコン)
 チャンドラ2
 チャンビー
-中国地区高専コンピュータクラブコミュニティ
 抽象構文木
 チューリングマシン
 チューリング完全
@@ -2397,14 +2159,12 @@ DNSサーバ
 DFI
 DQN (コンピュータ)
 TCPシーケンス番号予測攻撃
-Digital Photo Professional
 低水準言語
 定数時間
 ディスクセクタ
 ディスクドライブ
 ディスクメディア
 ディスクユーティリティ
-Distributed Management Task Force
 アンドレア・ディセッサ
 DWR-PG
 TVants
@@ -2436,7 +2196,6 @@ Design Compiler
 デジタルリサーチ
 Digital Linear Tape
 デスクトップパソコン
-Desktop Management Interface
 テスト自動化
 テストベッド
 デストラクタ
@@ -2535,7 +2294,6 @@ Nimrod (コンピュータ)
 Newgrounds
 入出力
 入出力ポート
-News for the People in Japan
 入力
 ニューロコンピュータ
 認証局
@@ -2580,7 +2338,6 @@ Hancom
 背景差分
 ハイダイナミックレンジイメージ
 配置図
-High Definition Audio
 バイトアドレス
 バイトコード
 バイトストリーム
@@ -2598,7 +2355,6 @@ High Definition Audio
 バウンスメール
 萩野純一郎
 Bugtraq
-バークレー・マッキントッシュ・ユーザーズグループ
 暴露ウイルス
 Packet Storm
 バス (コンピュータ)
@@ -2765,7 +2521,6 @@ FONTAC
 舟橋誠
 部分観測マルコフ決定過程
 不偏レンダリング
-フューチャー ・ヴィジョン・テクノロジーズ
 ぶら。
 フラグ (コンピュータ)
 プラグコンピュータ
@@ -2777,7 +2532,6 @@ Blackworm
 ブーリアン演算
 プリアンブル
 FREESPOT
-フリーソフトウェア財団対シスコシステムズ事件
 ナット・フリードマン
 Prius (日立製作所)
 フリーズ
@@ -2799,13 +2553,11 @@ Presto
 Frepa
 プレビュー
 プレビュー (ソフトウェア)
-Preboot Execution Environment
 プロアトラスX3
 ブロードバンドインターネット接続
 Blowfish
 日立フローラ
 ブログパーツ
-Programming Club Network
 プログラミング言語年表
 プログラミングコンテスト
 プログラミングパラダイム
@@ -2818,7 +2570,6 @@ Programming Club Network
 プロシージャ
 プロジェクションマッピング
 Project Engine
-プロジェクトマネジメント・プロフェッショナル
 プロセス識別子
 プロセッサー・ナンバー
 プロセッサ間割り込み
@@ -2860,7 +2611,6 @@ Basic認証
 ヘッドアップディスプレイ
 ヘッドクラッシュ
 ヘッドマウントディスプレイ
-Heterogeneous System Architecture
 ペトリネット
 ペネトレーションテスト
 ベビーテック
@@ -2900,9 +2650,7 @@ Vostro V13
 マーチングキューブ法
 イアン・マードック
 MICRO (雑誌)
-Microsoft Windows Home Server 2011
 Microsoftコードページ932
-Microsoft Office SharePoint Server
 マイクロソフト支援技術ベンダプログラム
 Microsoft Tag
 マイクロソフトの歴史
@@ -2950,7 +2698,6 @@ Matrox
 マネージドサービス
 MoneyLook
 Mapion
-Malaria Control Project
 マルコフ決定過程
 MULTI 16シリーズ
 マルチギガビット・イーサネット
@@ -2969,7 +2716,6 @@ Mr.PC
 みずほATMコーナー
 未知語
 ミッションクリティカル
-MIDI Manufacturers Association
 MiniDVD
 ミニコンピュータ
 ミニテル
@@ -3002,7 +2748,6 @@ MUSASINO-1
 めっき線メモリー
 メッセージング
 メディアクエリ
-Metropolitan Area Network
 メニュー (コンピュータ)
 Mebius
 メモリースティックオーディオ
@@ -3037,7 +2782,6 @@ Mora
 山登り法
 ヤマハ・MONTAGE
 YouOS
-ユーゴスラビア社会主義連邦共和国のコンピュータの一覧
 ユーザー辞書
 ユースケース図
 優先度継承
@@ -3046,7 +2790,6 @@ YouOS
 湯瀬裕昭
 ユニキャスト
 Uniscribe
-ユニバーサルWindowsプラットフォーム
 ユビキタス・コミュニケータ
 ユビキタス特区
 ユビキタスネットワーク
@@ -3074,8 +2817,6 @@ Livedoor Wireless
 ラスターイメージプロセッサ
 Lazurite
 楽観的並行性制御
-Latin American and Caribbean Internet Address Registry
-Rapid Application Development
 ラビンオートマトン
 ラベルプリンター
 RAMディスク
