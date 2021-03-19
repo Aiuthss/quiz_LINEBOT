@@ -190,7 +190,6 @@ def handle_postback(event):
         except LineBotApiError as e:
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="Error!"))
             print(str(e))
-        else:
     elif event.postback.data in ["0","1","2","3"]:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text=quiz[event.user_id]["response"][int(event.postback.data)]))
         quiz[event.user_id] = None
