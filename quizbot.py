@@ -84,6 +84,7 @@ def make_quiz_button_template(quiz):
 
 def make_quiz(category):
     reference = make_reference(category)
+    print(reference)
     return make_response(reference)
 
 def make_reference(category):
