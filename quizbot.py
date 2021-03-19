@@ -189,6 +189,8 @@ def handle_postback(event):
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
             line_bot_api.push_message(event.source.user_id,quiz_message)
         except LineBotApiError as e:
+            switch = 0
+            line_bot_api.push_message(event.source.user_id,TextSendMessage(text="Error!"))
             print(str(e))
         else:
             switch = 1
@@ -201,6 +203,3 @@ if __name__ == "__main__":
 #    app.run()
     port = int(os.getenv("PORT"))
     app.run(host="0.0.0.0", port=port)
-
-
-
