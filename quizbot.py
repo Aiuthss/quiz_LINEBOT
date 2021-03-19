@@ -70,7 +70,6 @@ def createRichmenu():
     return result
     
 def make_quiz_button_template(quiz):
-    
     message_template = TemplateSendMessage(
         alt_text = "非対応",
         template = ButtonsTemplate(
