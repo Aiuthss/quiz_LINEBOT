@@ -151,7 +151,7 @@ def delete_kakko(text):
     text = text[text.find("は")+1:]
     if text[0]=="、":
         text = text[1:]
-    text = re.sub("[[0-9]+]", "", text)
+    text = re.sub("\[.+?\]", "", text)
     return(text)
 
 rich_menu_list = line_bot_api.get_rich_menu_list()
