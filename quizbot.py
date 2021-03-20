@@ -137,7 +137,7 @@ def make_response(reference):
             response.append("不正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
     return {"question":question,"choices":choices,"response":response,"answer":answer}
 
-# delete first kakko
+# delete first () and all []
 def delete_kakko(text):
     depth = 0
     for i,char in enumerate(text):
@@ -151,6 +151,7 @@ def delete_kakko(text):
     text = text[text.find("は")+1:]
     if text[0]=="、":
         text = text[1:]
+    text = re.sub("\[.+?\]", "", text)
     return(text)
 
 rich_menu_list = line_bot_api.get_rich_menu_list()
@@ -192,6 +193,7 @@ def handle_postback(event):
     if event.postback.data in categories:
         try:
             line_bot_api.reply_message(event.reply_token,TextSendMessage(text="Now Loading..."))
+            print(line_bot_api.get_profile(event.source.user_id).display_name)
             quiz[event.source.user_id] = make_quiz(event.postback.data)
             quiz_message = make_quiz_button_template(quiz[event.source.user_id])
             line_bot_api.push_message(event.source.user_id,TextSendMessage(text="正しいものはどれ？"))
