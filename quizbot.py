@@ -137,7 +137,7 @@ def make_response(reference):
             response.append("不正解！" + "\n" + list(reference.keys())[answer] + "\n" + list(reference.values())[answer])
     return {"question":question,"choices":choices,"response":response,"answer":answer}
 
-# delete first kakko
+# delete first () and all []
 def delete_kakko(text):
     depth = 0
     for i,char in enumerate(text):
@@ -151,6 +151,7 @@ def delete_kakko(text):
     text = text[text.find("は")+1:]
     if text[0]=="、":
         text = text[1:]
+    text = re.sub("[[0-9]+]", "", text)
     return(text)
 
 rich_menu_list = line_bot_api.get_rich_menu_list()
